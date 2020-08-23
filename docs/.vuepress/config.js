@@ -2,7 +2,7 @@ const { getFilesOf } = require("./util");
 
 // .vuepress/config.js
 module.exports = {
-  base: "/woowa-practice-interview/",
+  base: "/practice-interview/",
   title: "우아한테크캠프3기 스터디 블로그",
   assetsPublicPath: "/",
   themeConfig: {
