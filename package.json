@@ -1,0 +1,25 @@
+{
+  "name": "woowa-practice-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woowa-techcamp-2020/practice-interview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woowa-techcamp-2020/practice-interview/issues"
+  },
+  "homepage": "https://github.com/woowa-techcamp-2020/practice-interview",
+  "devDependencies": {
+    "vuepress": "^1.5.0"
+  },
+  "dependencies": {}
+}
