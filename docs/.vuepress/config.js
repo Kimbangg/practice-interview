@@ -22,6 +22,11 @@ module.exports = {
         collapsable: false,
         children: getFilesOf("docs", "React"),
       },
+      {
+        title: "Frontend",
+        collapsable: false,
+        children: getFilesOf("docs", "Frontend"),
+      },
     ],
     repo: "https://github.com/woowa-techcamp-2020/practice-interview",
     repoLabel: "GitHub",
