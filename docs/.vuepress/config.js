@@ -17,6 +17,11 @@ module.exports = {
         collapsable: false,
         children: getFilesOf("docs", "Javascript"),
       },
+      {
+        title: "React",
+        collapsable: false,
+        children: getFilesOf("docs", "React"),
+      },
     ],
     repo: "https://github.com/woowa-techcamp-2020/practice-interview",
     repoLabel: "GitHub",
