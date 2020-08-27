@@ -20,7 +20,7 @@
 - Lexical Environment에서는 식별자와 참조 혹은 값을 기록하는 Environment Record와 outer(outerEnvironmentReference)로 구성되는데 outer는 외부 Lexical Environment를 참조하는 포인터
 - 하나의 컨텍스트에서도 while문이나 if, try, catch등의 코드 블럭이 실행 될 때 마다 새로운 Lexical Environment가 생기고, 기존의 Lexical Environment에 의해서 참조된다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1dd1f84b-43f4-4942-ac79-74afe8b4f08e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1dd1f84b-43f4-4942-ac79-74afe8b4f08e/Untitled.png)
+![hoisting](https://user-images.githubusercontent.com/38618187/91383656-a114ec80-e867-11ea-8a43-b546ba699f91.png)
 
 ## 스코프 체인
 

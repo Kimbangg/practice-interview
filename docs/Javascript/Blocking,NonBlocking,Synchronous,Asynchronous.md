@@ -12,11 +12,11 @@
 
 우리가 흔히 알고 있는 동기, 비동기는 사실 아래처럼 블로킹 + 동기, 논블로킹 + 비동기 인 경우가 많다.
 
-![http://i.imgur.com/iSafBIF.png](http://i.imgur.com/iSafBIF.png)
+![http://i.imgur.com/iSafBIF.png](https://www.notion.so/image/http%3A%2F%2Fi.imgur.com%2FiSafBIF.png?table=block&id=608c4f9e-b086-4887-aaef-bcf527493cae&userId=&cache=v2)
 
 그래서 그 예시로는 아래와 같다.
 
-![http://i.imgur.com/06P0Q6m.png](http://i.imgur.com/06P0Q6m.png)
+![http://i.imgur.com/06P0Q6m.png](https://www.notion.so/image/http%3A%2F%2Fi.imgur.com%2F06P0Q6m.png?table=block&id=0dc204d9-2514-4c04-8a7a-b1ff9bca3f45&width=3580&userId=&cache=v2)
 
 하지만 다른 조합들도 존재한다.
 
@@ -44,7 +44,7 @@ NonBlocking-Sync는 호출되는 함수는 바로 리턴하고, 호출하는 함
 
 즉 NonBlocking 메서드 호출 후 바로 반환 받아서 다른 작업을 할 수 있게 되지만, 메서드 호출에 의해 수행되는 작업이 완료된 것은 아니며, 호출하는 메서드가 호출되는 메서드 쪽에 작업 완료 여부를 계속 문의한다.
 
-![http://i.imgur.com/a8xZ9No.png](http://i.imgur.com/a8xZ9No.png)
+![http://i.imgur.com/a8xZ9No.png](https://www.notion.so/image/http%3A%2F%2Fi.imgur.com%2Fa8xZ9No.png?table=block&id=8ab7a163-5980-4898-8ef1-9c6f6b6f5649&userId=&cache=v2)
 
 ```javascript
 Future ft = asyncFileChannel.read(~~~);
@@ -82,7 +82,7 @@ that is every time the readyState property of the XMLHttpRequest changes.
 
 호출되는 함수가 바로 리턴하지 않고, 호출하는 함수는 작업 완료 여부를 신경쓰지 않는 것이다.
 
-![http://i.imgur.com/zKF0CgK.png](http://i.imgur.com/zKF0CgK.png)
+![http://i.imgur.com/zKF0CgK.png](https://www.notion.so/image/http%3A%2F%2Fi.imgur.com%2FzKF0CgK.png?table=block&id=83c0b63a-6b07-4d8a-8be6-f60bf178ad3c&userId=&cache=v2)
 
 **Blocking-Async의 대표적인 케이스가 Node.js와 MySQL의 조합**이라고 한다.
 
@@ -125,7 +125,7 @@ int main() {
   - 호출되는 함수의 작업 완료를 호출된 함수가 신경쓰면 Asynchronous
 - 성능과 자원의 효율적 사용 관점에서 가장 유리한 모델은 Async-NonBlocking 모델이다.
 
-![http://i.imgur.com/gKDoKbs.png](http://i.imgur.com/gKDoKbs.png)
+![http://i.imgur.com/gKDoKbs.png](https://www.notion.so/image/http%3A%2F%2Fi.imgur.com%2FgKDoKbs.png?table=block&id=4e4148cc-3484-4a3f-9b82-bd41eb724bb2&userId=&cache=v2)
 
 출처 : [https://homoefficio.github.io/2017/02/19/Blocking-NonBlocking-Synchronous-Asynchronous/](https://homoefficio.github.io/2017/02/19/Blocking-NonBlocking-Synchronous-Asynchronous/)
 

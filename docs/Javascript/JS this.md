@@ -10,11 +10,11 @@ console.log(window);
 console.log(this === window);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc1cabd4-b6b5-4da0-949f-ebbb1fb136a0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc1cabd4-b6b5-4da0-949f-ebbb1fb136a0/Untitled.png)
+![this01](https://user-images.githubusercontent.com/38618187/91383570-68751300-e867-11ea-8c41-0bf5b32bc830.png)
 
 - 전역변수를 선언하면 자바스크립트 엔진은 이를 전역객체의 프로퍼티로 할당한다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b3dcae7-9911-4552-9e19-f84766508a89/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b3dcae7-9911-4552-9e19-f84766508a89/Untitled.png)
+![this02](https://user-images.githubusercontent.com/38618187/91383576-6ad76d00-e867-11ea-8bf8-a94e861f233e.png)
 
 ## 메서드와 함수에서의 this
 
@@ -37,7 +37,7 @@ var obj = {
 obj.method(2);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4009dfd9-a102-497a-8cd4-9461b3774878/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4009dfd9-a102-497a-8cd4-9461b3774878/Untitled.png)
+![this03](https://user-images.githubusercontent.com/38618187/91383577-6b700380-e867-11ea-9b95-1d1feb2fd16d.png)
 
 ```javascript
 // (1), (2), (3)에서의 this 는?
@@ -76,7 +76,7 @@ var cat = new Cat("나비", 1);
 console.log(cat);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9a6923c-4a93-4e11-8170-47e7a490da08/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9a6923c-4a93-4e11-8170-47e7a490da08/Untitled.png)
+![this04](https://user-images.githubusercontent.com/38618187/91383579-6c089a00-e867-11ea-974a-f2ca2e9e8b27.png)
 
 ## 콜백 함수 호출 시 this
 
@@ -127,7 +127,7 @@ var obj = {
 obj.outer();
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/317f7eeb-3549-434f-beb4-51f692ed83e7/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/317f7eeb-3549-434f-beb4-51f692ed83e7/Untitled.png)
+![this05](https://user-images.githubusercontent.com/38618187/91383580-6ca13080-e867-11ea-8bca-b3fb71502863.png)
 
 ### 명시적으로 this를 바인딩 하는 법
 

@@ -4,7 +4,7 @@
 
 자세한 브라우저 구조는 마다 조금 상이
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7cb93d5f-a912-4721-97a8-4931c78c8456/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7cb93d5f-a912-4721-97a8-4931c78c8456/Untitled.png)
+![browser01](https://user-images.githubusercontent.com/38618187/91383396-07e5d600-e867-11ea-93c3-a7c4c657168b.png)
 
 - User Interface: 주소 표시줄, 이전/다음 버튼, 북마크 메뉴 등. 요청한 페이지를 보여주는 창을 제외한 나머지 모든 부분
 - Browser Engine: User Interface와 Rendering Engine 사이의 동작을 제어
@@ -14,7 +14,7 @@
 
 HTML 문서가 전달되면 다음 과정을 진행.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/45c6f875-d5b7-4393-8b27-ca82d00eb35a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/45c6f875-d5b7-4393-8b27-ca82d00eb35a/Untitled.png)
+![browser02](https://user-images.githubusercontent.com/38618187/91383399-0a483000-e867-11ea-80a6-dface0a9d2e2.png)
 
 1. HTML 문서를 파싱 하여 DOM 트리, CSS 문서를 파싱 하여 CSSOM 트리 생성
 2. DOM과 CSSOM을 이용하여 렌더 트리 생성
@@ -23,7 +23,7 @@ HTML 문서가 전달되면 다음 과정을 진행.
 
 ## 렌더링 엔진 동작 과정 상세
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5924e42c-fa14-40f3-a2a5-9ab4b29f4913/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5924e42c-fa14-40f3-a2a5-9ab4b29f4913/Untitled.png)
+![browser03](https://user-images.githubusercontent.com/38618187/91383400-0ae0c680-e867-11ea-9fc5-1dc43a1d0269.png)
 
 1. HTML을 파싱해서 DOM 노드를 만들고 이를 병합해서 DOM 트리 생성
 2. CSS를 파싱해서 스타일 규칙(CSSOM 트리) 생성
@@ -39,7 +39,7 @@ HTML 문서의 문자열을 브라우저가 이해할 수 있는 구조로 변�
 
 ### DOM(Document Object Model) 파싱 과정
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1376c320-6d8c-4fb9-9b88-4d3e8575138f/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1376c320-6d8c-4fb9-9b88-4d3e8575138f/Untitled.png)
+![browser04](https://user-images.githubusercontent.com/38618187/91383404-0b795d00-e867-11ea-9d5e-dc71145e8f07.png)
 
 1. 변환: raw byte를 문자열로 변환
 2. 토큰화: W3C HTML5 표준에 따라 문자열을 고유 토큰으로 변환(엣날엔 브라우저 각각이 방식이 달랐음 ⇒호환성 똥)
@@ -48,11 +48,11 @@ HTML 문서의 문자열을 브라우저가 이해할 수 있는 구조로 변�
 
 ### CSSOM(CSS Object Model) 파싱 과정
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/52cfcc36-7747-4ff7-b8b8-b317d786c7ee/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/52cfcc36-7747-4ff7-b8b8-b317d786c7ee/Untitled.png)
+![browser05](https://user-images.githubusercontent.com/38618187/91383405-0c11f380-e867-11ea-8d8f-059300f2bc6d.png)
 
 과정은 DOM 파싱 과정과 유사
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95bd4cc5-a8c2-4ede-8c19-fedb7b01cf20/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95bd4cc5-a8c2-4ede-8c19-fedb7b01cf20/Untitled.png)
+![browser06](https://user-images.githubusercontent.com/38618187/91383406-0c11f380-e867-11ea-8405-bdcc1a177f3f.png)
 
 CSSOM이 트리 구조를 가지는 이유는 하향식으로 규칙을 적용
 
@@ -62,7 +62,7 @@ CSSOM이 트리 구조를 가지는 이유는 하향식으로 규칙을 적용
 
 화면에 표시되는 노드들만 포함하여 트리 구축
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9995ca61-0fd9-4226-a2e2-347e68a3d4a2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9995ca61-0fd9-4226-a2e2-347e68a3d4a2/Untitled.png)
+![browser07](https://user-images.githubusercontent.com/38618187/91383408-0caa8a00-e867-11ea-9dc4-c6b41f438763.png)
 
 1. DOM 트리에서 노드를 탐색함
    - 화면에 표시되지 않는 노드들은 추가안함(script, meta 태그)

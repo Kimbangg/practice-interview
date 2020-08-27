@@ -13,11 +13,11 @@
 - [MVC란?](https://kwonsye.github.io/study%20note/2019/03/03/mvc-pattern.html) 모델, 뷰, 컨트롤러로 구성된 패턴. 양방향 데이터 흐름.
   => MVC의 단점은?
 
-      ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3549f33c-aeec-4cb9-9085-299ae9e5f3cc/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3549f33c-aeec-4cb9-9085-299ae9e5f3cc/Untitled.png)
+![flux01](https://user-images.githubusercontent.com/38618187/91383147-652d5780-e866-11ea-890b-7a560f4250dd.png)
 
       - 모델(데이터를 가지고 있음)이 렌더링을 하기 위해 뷰 레이어로 데이터를 보내고 뷰 레이어에서 데이터의 변경이 이루어지면 모델에 있는 데이터를 업데이트 해야 했다. 또한 의존성이 있는 데이터가 있다면 해당 모델이 다른 모델을 업데이트 해야 할 때도 있었다.
 
-          ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e35a16f-8225-4e51-af80-0b5feabb5092/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e35a16f-8225-4e51-af80-0b5feabb5092/Untitled.png)
+![flux02](https://user-images.githubusercontent.com/38618187/91383196-7f673580-e866-11ea-91e0-fd2c94e297ef.png)
 
       - 이러한 변경들이 하나의 데이터가 변경 되었을 때 다수의 변경들이 일어나게 된다면 마구 섞여서 복잡도가 높아지게 된다.
       ⇒ 그래서 이러한 데이터의 흐름은 디버깅 하기 어려운 구조가 되버린다.
@@ -32,7 +32,7 @@
   => 리액트에서는 부모 컴포넌트와 자식 컴포넌트간에 데이터를 전달할 수 있는데, 데이터를 전달할 때 부모에서 자식에게로만 데이터가 전달이 가능하다.
   이러한 단방향 데이터 흐름에서 부모-자식간의 교류가 아닌 컴포넌트간의 데이터 교류가 필요한 경우 글로벌 상태 관리를 하기 위해 상태 관리 라이브러리가 등장!
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68157b72-cd8c-4aa5-95fd-7e1b3937d5ba/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68157b72-cd8c-4aa5-95fd-7e1b3937d5ba/Untitled.png)
+![flux03](https://user-images.githubusercontent.com/38618187/91383245-a0c82180-e866-11ea-98d8-81db7db61dad.png)
 
 ## 3. Flux 패턴 용어 정리
 
@@ -42,7 +42,7 @@
 - 디스패처 : 데이터 흐름을 관리하는 허브 역할. 액션이 발생하면 디스패처로 액션 객체 전달되고 디스패처에서 등록된 콜백함수를 통해 스토어에 전달. ⇒ 액션을 스토어에 전달. 동기적으로 실행된다.
 - 스토어 : 상태 저장소. 무조건 디스패처를 통해 액션을 보내야만 데이터 변경이 가능하다.
 
-[https://t1.daumcdn.net/cfile/tistory/995759505B5BDFFC0C?download](https://t1.daumcdn.net/cfile/tistory/995759505B5BDFFC0C?download)
+![https://t1.daumcdn.net/cfile/tistory/995759505B5BDFFC0C?download](https://t1.daumcdn.net/cfile/tistory/995759505B5BDFFC0C?download)
 
 ## 4. Flux 패턴을 사용한 예제
 
