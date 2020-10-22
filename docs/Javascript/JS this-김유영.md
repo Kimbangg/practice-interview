@@ -1,4 +1,4 @@
-# Javascript this
+# Javascript this - 김유영
 
 ## 전역 공간에서의 this
 

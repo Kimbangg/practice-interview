@@ -1,4 +1,4 @@
-# Blocking-NonBlocking-Synchronous-Asynchronous
+# Blocking-NonBlocking-Synchronous-Asynchronous - 박철훈
 
 블로킹, 논블로킹, 동기, 비동기에 대해서 알아보자.
 

@@ -1,4 +1,4 @@
-# Hoisting
+# Hoisting - 전수현
 
 ## 호이스팅이란 무엇인가
 

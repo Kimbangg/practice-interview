@@ -1,4 +1,4 @@
-# 프로토타입 기반 프로그래밍
+# 프로토타입 기반 프로그래밍 - 전은정
 
 > Prototype-based programming is a style of object-oriented programming in which classes are not explicitly defined, but rather derived by adding properties and methods to an instance of another class or, less frequently, adding them to an empty object.
 
@@ -45,7 +45,7 @@ Object().__proto__;
 ```javascript
 const jenny = {};
 jenny.sleepy = true;
-jenny.eat = function () {
+jenny.eat = function() {
   console.log("냠냠");
 };
 ```
@@ -53,13 +53,13 @@ jenny.eat = function () {
 ```javascript
 const jhaemin = {};
 jhaemin.sleepy = true;
-jhaemin.eat = function () {
+jhaemin.eat = function() {
   console.log("냠냠");
 };
 
 const agrajak = {};
 agrajak.sleepy = true;
-agrajak.eat = function () {
+agrajak.eat = function() {
   console.log("냠냠");
 };
 ```
@@ -74,7 +74,7 @@ function createHuman(name, isSleepy) {
   human.name = name;
   human.sleepy = isSleepy;
 
-  human.eat = function () {
+  human.eat = function() {
     console.log("냠냠");
   };
 
@@ -92,7 +92,7 @@ const agrajak = createHuman("agrajak", true);
 
 ```javascript
 const humanMethods = {
-  eat: function () {
+  eat: function() {
     console.log("냠냠");
   },
 };
@@ -114,7 +114,7 @@ function createHuman(name, isSleepy) {
 
 ```javascript
 const humanMethods = {
-  eat: function () {
+  eat: function() {
     console.log("냠냠");
   },
 };
@@ -165,7 +165,7 @@ function createHuman(name, isSleepy) {
   return human; // 별표
 }
 
-createHuman.prototype.eat = function () {
+createHuman.prototype.eat = function() {
   console.log("냠냠");
 };
 ```
@@ -250,7 +250,7 @@ const jenny = new HumanFunc("jenny");
 
 jenny.__proto__;
 
-HumanFunc.prototype.eat = function () {
+HumanFunc.prototype.eat = function() {
   console.log(`${this.name} is eating`);
 };
 
@@ -276,7 +276,7 @@ jenny.__proto__;
 
 HumanClass.prototype;
 
-HumanClass.prototype.eat = function () {
+HumanClass.prototype.eat = function() {
   console.log(`${this.name} is eating`);
 };
 
@@ -372,7 +372,7 @@ function Human(name) {
 }
 
 Human.prototype = Object.create(Array.prototype);
-Human.prototype.slice = function () {
+Human.prototype.slice = function() {
   console.log(`slicing ${this.name}?!`);
 };
 

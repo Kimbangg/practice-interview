@@ -1,4 +1,4 @@
-# Javascript Symbol (심볼)
+# Javascript Symbol (심볼) - 조찬기
 
 > ES6에 추가된 심볼타입에 대해 알아봅시다.
 
